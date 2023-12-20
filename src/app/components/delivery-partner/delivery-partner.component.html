@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="header">
+        <div class="title">
+            <h1>Register as Delivery Partner.</h1>
+        </div>
+    </div>
+
+    <div class="form">
+        <form class="example-form" [formGroup]="sellerRegisterForm" enctype="multipart/form-data" #fform="ngForm">
+            <mat-form-field class="example-full-width">
+                <mat-label>First Name</mat-label>
+                <input type="text" matInput formControlName="firstName">
+                <mat-error>{{formErrors.firstName}}</mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Last Name</mat-label>
+                <input type="text" matInput formControlName="lastName">
+                <mat-error>{{formErrors.lastName}}</mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput formControlName="emailId">
+                <mat-error>{{formErrors.emailId}}</mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Mobile Number</mat-label>
+                <input type="text" matInput formControlName="mobileNumber">
+                <mat-error>{{ formErrors.mobileNumber}}</mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Pin</mat-label>
+                <input type="text" matInput formControlName="pin">
+                <mat-error>{{formErrors.pin}}</mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Address</mat-label>
+                <input type="text" matInput formControlName="address">
+                <mat-error>{{formErrors.address}}</mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>City</mat-label>
+                <input type="text" matInput formControlName="city">
+                <mat-error>{{formErrors.city}}</mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>District</mat-label>
+                <input type="text" matInput formControlName="district">
+                <mat-error>{{formErrors.district}}</mat-error>
+            </mat-form-field>
+            <mat-checkbox class="example-margin">
+                <p>
+                    I agree to the <a href="">Delivery Guidelines</a>
+                </p>
+            </mat-checkbox>
+            <button>Apply</button>
+        </form>
+    </div>
+</div>

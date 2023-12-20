@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="header">
+        <img src="../../../assets/images/apply_seller_header_img.svg" alt="rectangle_7" />
+        <h1>Register your store </h1>
+    </div>
+    <p>Please fill the form below and our executive will contact your shortly.</p>
+
+    <div class="form">
+        <form class="example-form" [formGroup]="sellerRegisterForm" enctype="multipart/form-data" #fform="ngForm">
+            <mat-form-field class="example-full-width">
+                <mat-label>Seller’s First Name</mat-label>
+                <input type="text" matInput formControlName="firstName">
+                <mat-error>{{formErrors.firstName}}</mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Seller’s Last Name</mat-label>
+                <input type="text" matInput formControlName="lastName">
+                <mat-error>{{formErrors.lastName}}</mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Seller’s Email Id</mat-label>
+                <input type="email" matInput formControlName="emailId">
+                <mat-error>{{formErrors.emailId}}</mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Seller’s Phone Number</mat-label>
+                <input type="text" matInput formControlName="mobileNumber">
+                <mat-error>{{ formErrors.mobileNumber}}</mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Store Name</mat-label>
+                <input type="text" matInput formControlName="storeName">
+                <mat-error>{{formErrors.storeName}}</mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Store Address</mat-label>
+                <input type="email" matInput formControlName="storeAddress">
+                <mat-error>{{formErrors.storeAddress}}</mat-error>
+            </mat-form-field>
+            <button>Apply</button>
+        </form>
+    </div>
+</div>
